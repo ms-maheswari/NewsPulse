@@ -10,7 +10,7 @@ const Navbar = ({ activeCategory, onCategoryClick, onSearch }) => {
   return (
     <nav className="fixed top-0 left-0 w-full bg-gray-800 text-white py-4 shadow-md z-50">
       <div className="container mx-auto flex justify-between items-center px-4">
-        <a href="#" className="text-2xl font-bold text-yellow-400">News24</a>
+        <a href="#" className="text-2xl font-bold text-yellow-400">NewsPulse</a>
         <button
           className="text-white block lg:hidden"
           onClick={handleMenuToggle}
