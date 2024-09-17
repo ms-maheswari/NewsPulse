@@ -31,7 +31,7 @@ To get started with the NewsPulse project locally, follow these steps:
    npm install
 ```
 
-3. **Run the development server
+3. **Run the development server**
 
 ```bash
    npm start
