@@ -9,7 +9,7 @@ const App = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const ITEMS_PER_PAGE = 6;
-  const API_KEY = '549b91ec15b362a7b882e0fed823779c';
+  const API_KEY = 'e1e4a5705f7cf86d578aa5c9695a5dea';
   const BASE_URL = `https://api.mediastack.com/v1/news?access_key=${API_KEY}`;
 
   const fetchNews = async (url, page) => {
