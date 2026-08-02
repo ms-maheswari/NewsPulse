@@ -10,7 +10,7 @@ const App = () => {
   const [totalPages, setTotalPages] = useState(1);
   const ITEMS_PER_PAGE = 6;
   const API_KEY = 'e1e4a5705f7cf86d578aa5c9695a5dea';
-  const BASE_URL = `https://api.mediastack.com/v1/news?access_key=${API_KEY}`;
+  const BASE_URL = `https://api.mediastack.com/v1/news?access_key=${API_KEY}&languages=en`;
 
   const fetchNews = async (url, page) => {
     try {
@@ -38,7 +38,7 @@ const App = () => {
 
   const handleSearch = (query) => {
     if (query) {
-      fetchNews(`${BASE_URL}&keywords=${encodeURIComponent(query)}`, currentPage);
+      fetchNews(`${BASE_URL}&keywords=${encodeURIComponent(query)}&languages=en`, currentPage);
     }
   };
 
